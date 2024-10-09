@@ -1,0 +1,167 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 30px 20px; /* Ajuste do espaçamento padrão */
+    border: 1px solid transparent;
+    transition: background-color 0.3s, color 0.3s, border 0.3s; /* Suavização das mudanças */
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #fff;
+}
+
+/* Seção de Destaques */
+.destaques {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.destaques h2 {
+    margin-bottom: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article h3 {
+    margin: 0;
+}
+
+article a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* Notícias */
+.noticias {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.analises {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.guias {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.contato {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 20%;
+}
+
+.contato h2 {
+    text-align: center;
+}
+
+.contato form label {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.contato form input {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 250px;
+    font-size: larger;
+    margin-bottom: 10px; /* Adiciona espaço entre os campos */
+}
+
+.contato form input[type="submit"] {
+    background-color: #555555; /* Cor de fundo verde */
+    color: white; /* Cor do texto branca */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Mostra a mãozinha ao passar o mouse */
+    height: 40px; /* Ajusta a altura */
+    width: 260px; /* Ajusta a largura para ser um pouco maior */
+    border-radius: 10px; /* Bordas arredondadas mais suaves */
+    font-size: larger; /* Tamanho da fonte maior */
+    transition: background-color 0.3s ease; /* Suaviza a mudança de cor */
+}
+
+.contato form input[type="submit"]:hover {
+    background-color: #0066ff; /* Cor mais escura ao passar o mouse */
+}
