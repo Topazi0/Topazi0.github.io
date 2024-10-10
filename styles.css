@@ -34,9 +34,9 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 30px 20px; /* Ajuste do espaçamento padrão */
+    padding: 30px 20px; /* Ajuste do espaçamento */
     border: 1px solid transparent;
-    transition: background-color 0.3s, color 0.3s, border 0.3s; /* Suavização das mudanças */
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
 
 nav ul li a:hover {
@@ -46,7 +46,7 @@ nav ul li a:hover {
 }
 
 /* Seção de Destaques */
-.destaques {
+.destaques, .noticias, .analises, .guias, .contato {
     background-color: #fff;
     padding: 20px;
     margin: 20px auto;
@@ -73,14 +73,6 @@ article a {
 
 article a:hover {
     text-decoration: underline;
-}
-
-/* Notícias */
-.noticias {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
 }
 
 /* Footer */
@@ -110,27 +102,7 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
-.analises {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-}
-
-.guias {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-}
-
-.contato {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    width: 20%;
-}
-
+/* Formulário de Contato */
 .contato h2 {
     text-align: center;
 }
@@ -145,23 +117,76 @@ footer ul li a:hover {
     border: 1px solid black;
     border-radius: 5px;
     height: 30px;
-    width: 250px;
+    width: 100%;
     font-size: larger;
     margin-bottom: 10px; /* Adiciona espaço entre os campos */
 }
 
 .contato form input[type="submit"] {
-    background-color: #555555; /* Cor de fundo verde */
-    color: white; /* Cor do texto branca */
-    border: none; /* Remove a borda */
-    cursor: pointer; /* Mostra a mãozinha ao passar o mouse */
-    height: 40px; /* Ajusta a altura */
-    width: 260px; /* Ajusta a largura para ser um pouco maior */
-    border-radius: 10px; /* Bordas arredondadas mais suaves */
-    font-size: larger; /* Tamanho da fonte maior */
-    transition: background-color 0.3s ease; /* Suaviza a mudança de cor */
+    background-color: #555555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: larger;
+    transition: background-color 0.3s ease;
 }
 
 .contato form input[type="submit"]:hover {
-    background-color: #0066ff; /* Cor mais escura ao passar o mouse */
+    background-color: #0066ff;
+}
+
+/* Responsividade */
+
+/* Estilos para telas médias (tablets e pequenos desktops) */
+@media (max-width: 768px) {
+    .destaques, .noticias, .analises, .guias, .contato {
+        width: 90%; /* Ajuste a largura para tablets */
+    }
+
+    header {
+        flex-direction: column; /* Alinhe os itens verticalmente em telas menores */
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca o menu em coluna em vez de linha */
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        padding: 10px 15px; /* Ajuste o espaçamento dos links */
+    }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 600px) {
+    .destaques, .noticias, .analises, .guias, .contato {
+        width: 100%; /* Altere o layout para telas menores */
+        padding: 10px; /* Ajuste o padding para telas pequenas */
+    }
+
+    header {
+        padding: 10px; /* Reduza o padding do header */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center; /* Centralize os links de navegação */
+    }
+
+    nav ul li a {
+        width: 100%; /* Faça os links ocuparem a largura total da tela */
+        text-align: center;
+    }
+
+    .contato form input[type="submit"] {
+        width: 100%; /* Certifique-se de que o botão de envio ocupa toda a largura da tela */
+    }
 }
