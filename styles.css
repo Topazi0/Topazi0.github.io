@@ -8,12 +8,18 @@ body {
 
 /* Header */
 header {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header img {
+    width: auto;
+    max-width: 60%; /*ajuste o tamanho da imagem*/
+    height: auto; /*Mantem a proporção da imagem*/
 }
 
 header h1 {
@@ -34,7 +40,7 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 30px 20px; /* Ajuste do espaçamento */
+    padding: 10px 20px; /* Ajuste do espaçamento */
     border: 1px solid transparent;
     transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
@@ -48,9 +54,27 @@ nav ul li a:hover {
 /* Seção de Destaques */
 .destaques, .noticias, .analises, .guias, .contato {
     background-color: #fff;
-    padding: 20px;
-    margin: 20px auto;
+    padding: 30px;
+    margin: 40px auto;
     width: 80%;
+}
+
+.noticias img {
+    width: auto;
+    max-width: 80%;
+    height: auto;
+}
+
+.noticias h1 {
+    font-size: xx-large;
+    text-align: center;
+    text-decoration: underline;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.noticias p {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .destaques h2 {
@@ -102,42 +126,6 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
-/* Formulário de Contato */
-.contato h2 {
-    text-align: center;
-}
-
-.contato form label {
-    text-align: center;
-    font-size: larger;
-    font-weight: bold;
-}
-
-.contato form input {
-    border: 1px solid black;
-    border-radius: 5px;
-    height: 30px;
-    width: 100%;
-    font-size: larger;
-    margin-bottom: 10px; /* Adiciona espaço entre os campos */
-}
-
-.contato form input[type="submit"] {
-    background-color: #555555;
-    color: white;
-    border: none;
-    cursor: pointer;
-    height: 40px;
-    width: 100%;
-    border-radius: 10px;
-    font-size: larger;
-    transition: background-color 0.3s ease;
-}
-
-.contato form input[type="submit"]:hover {
-    background-color: #0066ff;
-}
-
 /* Responsividade */
 
 /* Estilos para telas médias (tablets e pequenos desktops) */
@@ -162,6 +150,12 @@ footer ul li a:hover {
 
     nav ul li a {
         padding: 10px 15px; /* Ajuste o espaçamento dos links */
+    }
+
+    .noticias img {
+        width: auto;
+        max-width: 80%;
+        height: auto;
     }
 }
 
@@ -188,5 +182,15 @@ footer ul li a:hover {
 
     .contato form input[type="submit"] {
         width: 100%; /* Certifique-se de que o botão de envio ocupa toda a largura da tela */
+    }
+
+    .logo {
+        max-width: 100px; /* Diminui a logo em dispositivos móveis */
+    }
+
+    .noticias img {
+        width: auto;
+        max-width: 80%;
+        height: auto;
     }
 }
